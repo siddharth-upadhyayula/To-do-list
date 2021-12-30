@@ -35,7 +35,8 @@ function newElement () {
     if(inputValue===''){
         alert('this field cannot be empty')
     }
-    else{
+    else
+    {
         document.getElementById('list').appendChild(li)
     }
     document.getElementById('item').value=''
@@ -45,8 +46,10 @@ function newElement () {
     span.appendChild(txt);
     li.appendChild(span)
 
-    for (i=0; i<close.length; i++){
-        close[i].onclick=function(){
+    for (i=0; i<close.length; i++)
+    {
+        close[i].onclick=function()
+        {
             var div = this.parentElement;
             div.style.display = 'none'
         }
